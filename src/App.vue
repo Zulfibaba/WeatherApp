@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <div class="container header mt-5">
-      <div class="row justify-content-center">
+      <div class=" row justify-content-center">
         <div class="col-12 text-center">
           <h1 class="mb-5">Weather App</h1>
         </div>
@@ -55,7 +55,9 @@ export default {
 body {
   background: #121212 !important;
 }
-
+.container{
+  padding-top: 30px;
+}
 .header {
   background: #36454F;
   border-radius: 20px;
@@ -79,6 +81,9 @@ body {
 
 .input-group {
   margin-bottom: 1rem;
+}
+.app{
+  margin: 10px;
 }
 </style>
 

@@ -1,7 +1,7 @@
 <template>
     <div class="weather-card container p-0">
-        <div class="d-flex">
-            <div class="card main-dev w-100">
+        <div class="weather-container">
+            <div class="res-card card main-dev w-100">
                 <div class="p-3">
                     <h2 class="mb-1 day">Today</h2>
                     <p class="text-light date mb-0"> {{ date }} </p>
@@ -107,6 +107,12 @@ export default (await import('vue')).defineComponent({
 </script>
   
 <style scoped>
+.weather-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 body {
     background-color: #343d4b;
 }
@@ -214,5 +220,20 @@ tr:hover {
     transform: scale(0.9);
     transition: transform 0.1s ease;
 }
-</style>
+
+@media screen and (max-width: 450px) {
+
+    .weather-container {
+        margin: 0px 20px;
+        flex-direction: column;
+    }
+    .card-2{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .res-card {
+        height: 320px;
+        width: 97vw;
+    }
+}</style>
   

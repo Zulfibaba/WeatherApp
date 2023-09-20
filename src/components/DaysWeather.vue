@@ -78,6 +78,7 @@ export default (await import('vue')).defineComponent({
 
 <style>
 .days-tab {
+    border-radius: 15px;
     width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -127,5 +128,19 @@ span {
     color: #ffffff;
     transition: background-color 0.5s;
     border-radius: 10px;
+}
+@media screen and (max-width: 450px) {
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        font-size: 1.5rem;
+    }
+    .li_active img{
+        width: 100px;
+    }
 }
 </style>
