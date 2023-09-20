@@ -2,7 +2,7 @@
     <div class="weather-card container p-0">
         <div class="weather-container">
             <div class="res-card card main-dev w-100">
-                <div class="p-3">
+                <div class="p-3 height">
                     <h2 class="mb-1 day">Today</h2>
                     <p class="text-light date mb-0"> {{ date }} </p>
                     <small>{{ time }}</small>
@@ -107,6 +107,9 @@ export default (await import('vue')).defineComponent({
 </script>
   
 <style scoped>
+.height{
+    height: 460px;
+}
 .weather-container {
     display: flex;
     align-items: center;
@@ -138,7 +141,7 @@ h2.mb-1.day {
     background-color: #343d4b;
     background-repeat: no-repeat;
     margin-top: 2%;
-    height: auto;
+    
 }
 
 .temp {
