@@ -138,7 +138,7 @@ h2.mb-1.day {
     background-color: #343d4b;
     background-repeat: no-repeat;
     margin-top: 2%;
-
+    height: auto;
 }
 
 .temp {
